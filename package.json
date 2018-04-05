@@ -1,0 +1,24 @@
+{
+  "name": "nightsleep",
+  "version": "0.0.1",
+  "description": "tests in live",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "example": "node ./example/example.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dudarau/NightSleep.git"
+  },
+  "author": "dudarau",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/dudarau/NightSleep/issues"
+  },
+  "homepage": "https://github.com/dudarau/NightSleep#readme",
+  "dependencies": {
+    "express": "^4.16.3"
+  }
+}

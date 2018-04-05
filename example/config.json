@@ -1,0 +1,14 @@
+[{
+  "url": "/articles",
+  "header": "x-night-sleep",
+  "headerValue": "timeout",
+  "timeout": 1000,
+  "status": 200
+},
+  {
+    "url": "/articles",
+    "header": "x-night-sleep",
+    "headerValue": "server-error",
+    "timeout": 1000,
+    "status": 500
+  }]
