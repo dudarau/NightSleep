@@ -20,11 +20,11 @@
       "method": "POST",
       "status": 201,
       "bodyParams": {
-        "customer_number": ["3040422392"]
+        "customer_number": ["3040422392", "3040426194"]
       }
     },
     {
-      "url": "/customers/:customerId",
+      "url": "/:customerId",
       "method": "HEAD",
       "status": 200,
       "params": {
