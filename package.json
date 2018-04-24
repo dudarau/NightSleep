@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "start": "node index.js",
-    "example": "node ./example/example.js",
+    "example": "nodemon ./example/example.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -18,7 +18,9 @@
     "url": "https://github.com/dudarau/NightSleep/issues"
   },
   "homepage": "https://github.com/dudarau/NightSleep#readme",
-  "dependencies": {
-    "express": "^4.16.3"
+  "dependencies": {},
+  "devDependencies": {
+    "express": "^4.16.3",
+    "nodemon": "^1.17.3"
   }
 }

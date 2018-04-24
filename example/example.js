@@ -1,4 +1,8 @@
 const NigthSleep =  require('../index');
-const config = require('./config.json');
+const express = require('express');
+const app = express();
+const config = require('./example.json');
 
-NigthSleep.runServer(config);
+NigthSleep.runServer(app, console, config);
+
+app.listen(3000, () => console.log('App listening on port 3000!'));

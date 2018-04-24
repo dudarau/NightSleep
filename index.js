@@ -1,16 +1,18 @@
-const express = require('express');
-const app = express();
+const router = require('./src/initRoutes');
 
 module.exports = {
-    runServer: (config) => {
-        for(let i = 0; i < config.length; i++) {
-            app.get(config[i].url, (req, res) => {
-                if (config[i].status === 200) {
-                    res.send(config[i].headerValue);
-                }
-            })
+    runServer: (app, logger, config) => {
+        const routes = config.routes;
+        if (!routes) {
+            return;
+        }
+        for(let i = 0; i < routes.length; i++) {
+            router.initRoute(app, logger, routes[i])
         }
 
-        app.listen(3000, () => console.log('App listening on port 3000!'));
+        app.all('*', (req,res) => {
+           logger.log('all');
+           res.sendStatus(502);
+        });
     }
 };

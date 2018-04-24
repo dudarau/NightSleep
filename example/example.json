@@ -1,0 +1,35 @@
+{
+  "routes": [
+    {
+      "url": "/articles",
+      "header": "x-night-sleep",
+      "headerValue": "timeout",
+      "timeout": 1000,
+      "status": 200,
+      "method": "GET"
+    },
+    {
+      "url": "/articles",
+      "header": "x-night-sleep",
+      "headerValue": "server-error",
+      "timeout": 1000,
+      "status": 500
+    },
+    {
+      "url": "/subscriptions",
+      "method": "POST",
+      "status": 201,
+      "bodyParams": {
+        "customer_number": ["3040422392"]
+      }
+    },
+    {
+      "url": "/customers/:customerId",
+      "method": "HEAD",
+      "status": 200,
+      "params": {
+        "customerId": ["3040422392", "3040426194"]
+      }
+    }
+  ]
+}
