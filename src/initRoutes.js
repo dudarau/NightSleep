@@ -46,7 +46,7 @@ const isAllParamsValid = (req, routeConfig) => {
 const isConfiguredByHeaders = (req, res, logger, routeConfig) => {
   const action = req.get(ACTION_HEADER);
   const actionValue = req.get(ACTION_HEADER_VALUE);
-  logger.log(req.method, req.path, ' - ',  action, ' - ', actionValue);
+  logger.info(req.method, req.path, ' - ',  action, ' - ', actionValue);
   if (action) {
     if (action === 'timeout') {
       setTimeout(() => {
@@ -65,7 +65,7 @@ const isConfiguredByHeaders = (req, res, logger, routeConfig) => {
 
 const routeHandler = (logger, routeConfig) => {
   return (req, res, next) => {
-    logger.log(req.method, req.path);
+    logger.info(req.method, req.path);
     if (!isAllParamsValid(req, routeConfig)) {
       return next();
     }

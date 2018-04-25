@@ -12,4 +12,4 @@ app.use(bodyParser.urlencoded({ extended: true })); // for parsing application/x
 
 NigthSleep.runServer(app, console, config);
 
-app.listen(3000, () => console.log('App listening on port 3000!'));
+app.listen(3000, () => console.info('App listening on port 3000!'));
