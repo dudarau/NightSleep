@@ -1,6 +1,6 @@
 {
   "name": "nightsleep",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "tests in live",
   "main": "index.js",
   "scripts": {

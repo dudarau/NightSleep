@@ -1,7 +1,7 @@
 const router = require('./src/initRoutes');
 
 module.exports = {
-    runServer: (app, logger, config) => {
+    initRoutes: (app, logger, config) => {
         const routes = config.routes;
         if (!routes) {
             return;

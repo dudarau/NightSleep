@@ -10,6 +10,6 @@ app.use(bodyParser.json()); // for parsing application/json
 app.use(bodyParser.urlencoded({ extended: true })); // for parsing application/x-www-form-urlencoded
 
 
-NigthSleep.runServer(app, console, config);
+NigthSleep.initRoutes(app, console, config);
 
 app.listen(3000, () => console.info('App listening on port 3000!'));
